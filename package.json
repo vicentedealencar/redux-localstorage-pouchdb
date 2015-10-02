@@ -1,0 +1,39 @@
+{
+  "name": "redux-localstorage-pouchdb",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "rimraf lib && babel src --out-dir lib",
+    "test": "standard && babel-tape-runner tests/*.js"
+  },
+  "files": [
+    "lib/",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicentedealencar/redux-localstorage-pouchdb.git"
+  },
+  "keywords": [
+    "redux",
+    "localstorage",
+    "pouchdb"
+  ],
+  "author": "Vicente de Alencar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vicentedealencar/redux-localstorage-pouchdb/issues"
+  },
+  "homepage": "https://github.com/vicentedealencar/redux-localstorage-pouchdb#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-tape-runner": "^1.2.0",
+    "pouchdb": "^4.0.3",
+    "pouchdb-erase": "^1.0.2",
+    "rimraf": "^2.4.3",
+    "standard": "^5.3.1",
+    "tape": "^4.2.0"
+  }
+}
